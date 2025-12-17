@@ -34,6 +34,9 @@ export default function Home() {
         {/* New About Section */}
         <About about={about} />
 
+        {/* New Services Section */}
+        <Services services={services} />
+
         {/* Old sections - will replace incrementally */}
         <Projects projects={projects} />
         <Footer socialLinks={header.socialLinks} resumeUrl={header.resumeUrl} />
