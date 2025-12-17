@@ -16,17 +16,17 @@ const SectionNumber = ({ num }: { num: number }) => (
 
 export default function About({ about, profileImage = "/assets/glasswalls.jpg" }: AboutProps) {
   return (
-    <section id="about" className="py-24 px-4 md:px-36 max-w-[1200px] mx-auto">
-      <h2 className="flex items-center text-[28px] font-semibold text-[var(--heading-dark)] mb-10">
+    <section id="about" className="py-16 md:py-24 px-6 sm:px-12 md:px-24 lg:px-36 max-w-[1200px] mx-auto">
+      <h2 className="flex items-center text-2xl md:text-[28px] font-semibold text-[var(--heading-dark)] mb-8 md:mb-10">
         <SectionNumber num={1} /> About Me
         <span className="flex-1 h-px bg-[var(--bg-secondary)] ml-5 max-w-[300px]" />
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:gap-12">
         <div>
           {about.paragraphs.slice(0, -1).map((paragraph, index) => (
             <p
               key={index}
-              className="leading-relaxed mb-4 text-[var(--text-primary)]"
+              className="leading-relaxed mb-4 text-sm md:text-base text-[var(--text-primary)]"
             >
               {paragraph.split(/(startups|established brands|creative agencies)/).map((part, i) => {
                 if (["startups", "established brands", "creative agencies"].includes(part)) {
@@ -40,7 +40,7 @@ export default function About({ about, profileImage = "/assets/glasswalls.jpg" }
               })}
             </p>
           ))}
-          <p className="leading-relaxed mb-6 text-[var(--text-primary)]">
+          <p className="leading-relaxed mb-6 text-sm md:text-base text-[var(--text-primary)]">
             {about.paragraphs[about.paragraphs.length - 1]}
           </p>
           <ul className="grid grid-cols-2 gap-x-4 gap-y-2.5 list-none p-0 m-0">

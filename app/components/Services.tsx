@@ -17,12 +17,12 @@ export default function Services({ services }: ServicesProps) {
   const [activeService, setActiveService] = useState(0);
 
   return (
-    <section id="services" className="py-24 px-4 md:px-36 max-w-[1200px] mx-auto">
-      <h2 className="flex items-center text-[28px] font-semibold text-[var(--heading-dark)] mb-10">
+    <section id="services" className="py-16 md:py-24 px-6 sm:px-12 md:px-24 lg:px-36 max-w-[1200px] mx-auto">
+      <h2 className="flex items-center text-2xl md:text-[28px] font-semibold text-[var(--heading-dark)] mb-8 md:mb-10">
         <SectionNumber num={2} /> Services
         <span className="flex-1 h-px bg-[var(--bg-secondary)] ml-5 max-w-[300px]" />
       </h2>
-      <div className="flex flex-col md:flex-row gap-0">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-0">
         {/* Tabs */}
         <div className="flex flex-col border-l-2 border-[var(--bg-secondary)]">
           {services.map((service, index) => (
@@ -41,8 +41,8 @@ export default function Services({ services }: ServicesProps) {
         </div>
 
         {/* Content */}
-        <div className="py-2.5 px-0 md:pl-8 min-h-[280px]">
-          <h3 className="text-xl text-[var(--heading-dark)] mb-2 flex items-center gap-2.5">
+        <div className="py-2.5 px-0 md:pl-8 min-h-[240px] md:min-h-[280px]">
+          <h3 className="text-lg md:text-xl text-[var(--heading-dark)] mb-2 flex items-center gap-2.5">
             {services[activeService].title}
             {services[activeService].plus && (
               <span className="text-[11px] px-2 py-1 bg-[var(--accent-orange)]/20 text-[var(--accent-orange)] rounded font-mono">
@@ -54,7 +54,7 @@ export default function Services({ services }: ServicesProps) {
             {services[activeService].items.map((item, index) => (
               <li
                 key={index}
-                className="flex items-start gap-3 mb-3.5 leading-relaxed text-[var(--text-primary)]"
+                className="flex items-start gap-3 mb-3.5 leading-relaxed text-sm md:text-base text-[var(--text-primary)]"
               >
                 <span className="text-[var(--accent-cyan)] mt-0.5">▹</span>
                 <span>{item}</span>

@@ -14,9 +14,9 @@ export default function Hero({ name, tagline, description }: HeroProps) {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-center pt-24 px-4 md:px-36 max-w-[1200px] mx-auto"
+      className="min-h-screen flex flex-col justify-center pt-24 px-6 sm:px-12 md:px-24 lg:px-36 max-w-[1200px] mx-auto"
     >
-      <p className="text-[var(--accent-cyan)] font-mono text-base mb-5">
+      <p className="text-[var(--accent-cyan)] font-mono text-sm md:text-base mb-5">
         Hi, my name is
       </p>
       <h1 className="text-[clamp(40px,8vw,80px)] font-bold text-[var(--heading-dark)] leading-[1.1] m-0">
@@ -25,7 +25,7 @@ export default function Hero({ name, tagline, description }: HeroProps) {
       <h2 className="text-[clamp(40px,8vw,80px)] font-bold text-[var(--text-muted)] leading-[1.1] mt-2.5 mb-0">
         {tagline}
       </h2>
-      <p className="max-w-[540px] mt-6 text-lg leading-relaxed text-[var(--text-dim)]">
+      <p className="max-w-[540px] mt-6 text-base md:text-lg leading-relaxed text-[var(--text-dim)]">
         {description}
       </p>
       <a
