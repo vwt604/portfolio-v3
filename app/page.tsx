@@ -3,7 +3,8 @@
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
-import Projects from "./components/Projects";
+import FeaturedProjects from "./components/FeaturedProjects";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import SidebarLeft from "./components/SidebarLeft";
@@ -13,8 +14,8 @@ import shopifyPortfolioData from "./data/shopifyPortfolioData";
 import { ThemeProvider } from "./context/ThemeContext";
 
 export default function Home() {
-  const { header, projects } = portfolioData;
-  const { personalInfo, about, services } = shopifyPortfolioData;
+  const { header } = portfolioData;
+  const { personalInfo, about, services, featuredProjects } = shopifyPortfolioData;
 
   return (
     <ThemeProvider>
@@ -37,8 +38,14 @@ export default function Home() {
         {/* New Services Section */}
         <Services services={services} />
 
+        {/* New Featured Projects Section */}
+        <FeaturedProjects projects={featuredProjects} />
+
+        {/* New Contact Section */}
+        <Contact email={personalInfo.email} />
+
         {/* Old sections - will replace incrementally */}
-        <Projects projects={projects} />
+        {/* <Projects projects={projects} /> */}
         <Footer socialLinks={header.socialLinks} resumeUrl={header.resumeUrl} />
       </main>
     </ThemeProvider>

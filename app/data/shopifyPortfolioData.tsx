@@ -142,7 +142,7 @@ const shopifyPortfolioData: ShopifyPortfolioData = {
       tech: ["Shopify Plus", "Liquid", "JavaScript", "Recharge"],
       link: "#",
       github: "#",
-      img: "🌿",
+      img: "/assets/tweeter.jpg",
     },
     {
       title: "Urban Threads Co.",
@@ -150,7 +150,7 @@ const shopifyPortfolioData: ShopifyPortfolioData = {
       tech: ["Migration", "Shopify Plus", "SEO", "Data Transfer"],
       link: "#",
       github: null,
-      img: "👕",
+      img: "/assets/scheduler.jpg",
     },
     {
       title: "Peak Performance",
@@ -158,7 +158,7 @@ const shopifyPortfolioData: ShopifyPortfolioData = {
       tech: ["Performance", "Core Web Vitals", "Optimization"],
       link: "#",
       github: "#",
-      img: "⚡",
+      img: "/assets/jungle.jpg",
     },
     {
       title: "Artisan Home Goods",
@@ -166,7 +166,7 @@ const shopifyPortfolioData: ShopifyPortfolioData = {
       tech: ["Multi-currency", "AR", "Custom Filters", "Liquid"],
       link: "#",
       github: null,
-      img: "🏠",
+      img: "/assets/glasswalls.jpg",
     },
   ],
   otherProjects: [
