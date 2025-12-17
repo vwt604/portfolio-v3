@@ -6,7 +6,9 @@ interface NavigationProps {
   activeSection?: string;
 }
 
-export default function Navigation({ activeSection = "hero" }: NavigationProps) {
+export default function Navigation({
+  activeSection = "hero",
+}: NavigationProps) {
   const navItems = [
     { id: "about", num: 1, label: "About" },
     { id: "services", num: 2, label: "Services" },
@@ -37,14 +39,15 @@ export default function Navigation({ activeSection = "hero" }: NavigationProps) 
               onClick={() => scrollTo(item.id)}
               className="bg-transparent border-none text-[var(--text-emphasis)] cursor-pointer text-xs font-mono hover:text-[var(--accent-cyan)] transition-colors duration-200"
             >
-              <span className="text-[var(--accent-cyan)]">0{item.num}.</span> {item.label}
+              <span className="text-[var(--accent-cyan)]">0{item.num}.</span>{" "}
+              {item.label}
             </button>
           ))}
 
+          <ThemeToggle />
           {/* Theme Toggle - using existing component but styled for nav */}
-          <div className="border border-[var(--accent-cyan)] rounded p-1.5 hover:bg-[var(--accent-cyan)]/10 transition-all duration-200">
-            <ThemeToggle />
-          </div>
+          {/* <div className="border border-[var(--accent-cyan)] rounded p-1.5 hover:bg-[var(--accent-cyan)]/10 transition-all duration-200">
+          </div> */}
         </div>
       </div>
     </nav>
