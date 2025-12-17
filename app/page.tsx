@@ -3,16 +3,25 @@
 import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
+import SidebarLeft from "./components/SidebarLeft";
+import SidebarRight from "./components/SidebarRight";
 import portfolioData from "./data/portfolioData";
+import shopifyPortfolioData from "./data/shopifyPortfolioData";
 import { ThemeProvider } from "./context/ThemeContext";
-import ThemeToggle from "./components/ThemeToggle";
 
 export default function Home() {
   const { header, projects } = portfolioData;
+  const { personalInfo } = shopifyPortfolioData;
+
   return (
     <ThemeProvider>
+      {/* New Fixed Elements */}
+      <Navigation />
+      <SidebarLeft socialLinks={personalInfo.socialLinks} />
+      <SidebarRight email={personalInfo.email} />
+
       <main className="min-h-screen">
-        <ThemeToggle />
         <Header
           name={header.name}
           title={header.title}
