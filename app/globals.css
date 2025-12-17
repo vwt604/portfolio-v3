@@ -6,7 +6,19 @@
   --light-bg-secondary: #eee8d5;
   --light-text-primary: #073642;
   --light-text-secondary: #586e75;
+  --light-text-muted: #93a1a1;
+  --light-text-dim: #839496;
+  --light-text-emphasis: #586e75;
+  --light-heading: #073642;
+  --light-heading-dark: #002b36;
   --light-accent: #268bd2;
+  --light-accent-cyan: #2aa198;
+  --light-accent-green: #859900;
+  --light-accent-yellow: #b58900;
+  --light-accent-orange: #cb4b16;
+  --light-accent-red: #dc322f;
+  --light-accent-magenta: #d33682;
+  --light-accent-violet: #6c71c4;
   --light-border: #93a1a1;
 
   /* Solarized Dark Theme */
@@ -14,7 +26,19 @@
   --dark-bg-secondary: #073642;
   --dark-text-primary: #eee8d5;
   --dark-text-secondary: #93a1a1;
+  --dark-text-muted: #586e75;
+  --dark-text-dim: #657b83;
+  --dark-text-emphasis: #93a1a1;
+  --dark-heading: #eee8d5;
+  --dark-heading-dark: #fdf6e3;
   --dark-accent: #268bd2;
+  --dark-accent-cyan: #2aa198;
+  --dark-accent-green: #859900;
+  --dark-accent-yellow: #b58900;
+  --dark-accent-orange: #cb4b16;
+  --dark-accent-red: #dc322f;
+  --dark-accent-magenta: #d33682;
+  --dark-accent-violet: #6c71c4;
   --dark-border: #586e75;
 }
 
@@ -24,7 +48,19 @@
   --bg-secondary: var(--light-bg-secondary);
   --text-primary: var(--light-text-primary);
   --text-secondary: var(--light-text-secondary);
+  --text-muted: var(--light-text-muted);
+  --text-dim: var(--light-text-dim);
+  --text-emphasis: var(--light-text-emphasis);
+  --heading: var(--light-heading);
+  --heading-dark: var(--light-heading-dark);
   --accent: var(--light-accent);
+  --accent-cyan: var(--light-accent-cyan);
+  --accent-green: var(--light-accent-green);
+  --accent-yellow: var(--light-accent-yellow);
+  --accent-orange: var(--light-accent-orange);
+  --accent-red: var(--light-accent-red);
+  --accent-magenta: var(--light-accent-magenta);
+  --accent-violet: var(--light-accent-violet);
   --border: var(--light-border);
 }
 
@@ -33,7 +69,19 @@
   --bg-secondary: var(--dark-bg-secondary);
   --text-primary: var(--dark-text-primary);
   --text-secondary: var(--dark-text-secondary);
+  --text-muted: var(--dark-text-muted);
+  --text-dim: var(--dark-text-dim);
+  --text-emphasis: var(--dark-text-emphasis);
+  --heading: var(--dark-heading);
+  --heading-dark: var(--dark-heading-dark);
   --accent: var(--dark-accent);
+  --accent-cyan: var(--dark-accent-cyan);
+  --accent-green: var(--dark-accent-green);
+  --accent-yellow: var(--dark-accent-yellow);
+  --accent-orange: var(--dark-accent-orange);
+  --accent-red: var(--dark-accent-red);
+  --accent-magenta: var(--dark-accent-magenta);
+  --accent-violet: var(--dark-accent-violet);
   --border: var(--dark-border);
 }
 
