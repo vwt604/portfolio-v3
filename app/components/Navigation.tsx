@@ -28,7 +28,7 @@ export default function Navigation({
           onClick={() => scrollTo("hero")}
           className="w-10 h-10 border-2 border-[var(--accent-cyan)] rounded flex items-center justify-center font-mono font-bold text-[var(--accent-cyan)] text-lg hover:bg-[var(--accent-cyan)]/10 transition-all duration-200"
         >
-          D
+          V
         </button>
 
         {/* Nav Items */}
