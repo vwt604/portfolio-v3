@@ -32,83 +32,107 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
           return (
             <div
               key={index}
-              className={`relative ${
-                !isEven
-                  ? "md:grid md:grid-cols-[55%_45%] md:items-center md:gap-4"
-                  : "md:grid md:grid-cols-[45%_55%] md:items-center md:gap-4"
+              className={`grid grid-cols-1 items-center relative gap-4 ${
+                !isEven ? "md:grid-cols-[55%_45%]" : "md:grid-cols-[45%_55%]"
               }`}
             >
-              {/* Background Image - Always rendered first for mobile overlay */}
-              <a
-                href={project.link}
-                className={`relative aspect-[16/10] rounded overflow-hidden group block ${
-                  !isEven ? "md:order-2" : "md:order-1"
-                }`}
-              >
-                <Image
-                  src={project.img}
-                  alt={project.title}
-                  fill
-                  className="object-cover md:grayscale md:hover:grayscale-0 transition-all duration-300"
-                />
-                <div className="absolute inset-0 bg-[var(--accent-cyan)]/30 md:hover:bg-transparent transition-all duration-300" />
-              </a>
-
-              {/* Content - Overlays on mobile, side-by-side on desktop */}
-              <div
-                className={`absolute inset-0 flex flex-col justify-center p-6 md:relative md:inset-auto md:p-0 ${
-                  isEven
-                    ? "text-left md:text-right md:pl-0 md:pr-0 md:order-2"
-                    : "text-left md:pr-0 md:pl-0 md:order-1"
-                }`}
-              >
-                <p className="text-[var(--accent-cyan)] font-mono text-xs mb-2">
-                  Featured Project
-                </p>
-                <h3 className="text-xl md:text-2xl text-[var(--heading-dark)] mb-4 md:mb-5 font-semibold">
+              {isEven ? (
+                <>
+                  {/* Image Left */}
                   <a
                     href={project.link}
-                    className="text-[var(--heading-dark)] no-underline hover:text-[var(--accent-cyan)] transition-colors"
+                    className="relative aspect-[16/10] rounded overflow-hidden group block"
                   >
-                    {project.title}
+                    <Image
+                      src={project.img}
+                      alt={project.title}
+                      fill
+                      className="object-cover hover:grayscale-0 transition-all duration-300"
+                    />
+                    <div className="absolute inset-0 bg-[var(--bg-secondary)]/80 hover:bg-transparent transition-all duration-300" />
                   </a>
-                </h3>
-                <div
-                  className={`bg-transparent md:bg-[var(--bg-secondary)] p-0 md:p-6 rounded mb-4 md:mb-5 relative z-[2] ${
-                    isEven ? "md:-ml-20" : "md:-mr-20"
-                  }`}
-                >
-                  <p className="text-[var(--text-primary)] leading-relaxed text-sm md:text-[15px]">
-                    {project.desc}
-                  </p>
-                </div>
-                <div
-                  className={`flex gap-3 mb-4 flex-wrap ${
-                    isEven ? "md:justify-end" : "justify-start"
-                  }`}
-                >
-                  {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="font-mono text-xs text-[var(--text-dim)]"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <div
-                  className={`flex gap-4 ${
-                    isEven ? "md:justify-end" : "justify-start"
-                  }`}
-                >
+                  {/* Content Right */}
+                  <div className="text-right md:pl-10">
+                    <p className="text-[var(--accent-cyan)] font-mono text-xs mb-2">
+                      Featured Project
+                    </p>
+                    <h3 className="text-2xl text-[var(--heading-dark)] mb-5">
+                      {project.title}
+                    </h3>
+                    <div className="bg-[var(--bg-secondary)] p-6 rounded mb-5 md:-ml-20 relative z-[2]">
+                      <p className="text-[var(--text-primary)] leading-relaxed text-[15px]">
+                        {project.desc}
+                      </p>
+                    </div>
+                    <div className="flex justify-end gap-3 mb-4 flex-wrap">
+                      {project.tech.map((tech) => (
+                        <span
+                          key={tech}
+                          className="font-mono text-xs text-[var(--text-dim)]"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex justify-end gap-4">
+                      <a
+                        href={project.link}
+                        className="text-[var(--text-emphasis)] hover:text-[var(--accent-cyan)] transition-colors duration-200"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  {/* Content Left */}
+                  <div className="text-left md:pr-10 md:order-1">
+                    <p className="text-[var(--accent-cyan)] font-mono text-xs mb-2">
+                      Featured Project
+                    </p>
+                    <h3 className="text-2xl text-[var(--heading-dark)] mb-5">
+                      {project.title}
+                    </h3>
+                    <div className="bg-[var(--bg-secondary)] p-6 rounded mb-5 md:-mr-20 relative z-[2]">
+                      <p className="text-[var(--text-primary)] leading-relaxed text-[15px]">
+                        {project.desc}
+                      </p>
+                    </div>
+                    <div className="flex gap-3 mb-4 flex-wrap">
+                      {project.tech.map((tech) => (
+                        <span
+                          key={tech}
+                          className="font-mono text-xs text-[var(--text-dim)]"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex gap-4">
+                      <a
+                        href={project.link}
+                        className="text-[var(--text-emphasis)] hover:text-[var(--accent-cyan)] transition-colors duration-200"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    </div>
+                  </div>
+                  {/* Image Right */}
                   <a
                     href={project.link}
-                    className="text-[var(--text-emphasis)] hover:text-[var(--accent-cyan)] transition-colors duration-200"
+                    className="relative aspect-[16/10] rounded overflow-hidden group md:order-2 block"
                   >
-                    <ExternalLink size={20} />
+                    <Image
+                      src={project.img}
+                      alt={project.title}
+                      fill
+                      className="object-cover hover:grayscale-0 transition-all duration-300"
+                    />
+                    <div className="absolute inset-0 bg-[var(--accent-cyan)]/30 hover:bg-transparent transition-all duration-300" />
                   </a>
-                </div>
-              </div>
+                </>
+              )}
             </div>
           );
         })}
