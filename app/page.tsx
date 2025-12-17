@@ -9,12 +9,10 @@ import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import SidebarLeft from "./components/SidebarLeft";
 import SidebarRight from "./components/SidebarRight";
-import portfolioData from "./data/portfolioData";
 import shopifyPortfolioData from "./data/shopifyPortfolioData";
 import { ThemeProvider } from "./context/ThemeContext";
 
 export default function Home() {
-  const { header } = portfolioData;
   const { personalInfo, about, services, featuredProjects } = shopifyPortfolioData;
 
   return (
@@ -44,9 +42,8 @@ export default function Home() {
         {/* New Contact Section */}
         <Contact email={personalInfo.email} />
 
-        {/* Old sections - will replace incrementally */}
-        {/* <Projects projects={projects} /> */}
-        <Footer socialLinks={header.socialLinks} resumeUrl={header.resumeUrl} />
+        {/* New Footer */}
+        <Footer />
       </main>
     </ThemeProvider>
   );
