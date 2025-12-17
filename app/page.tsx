@@ -1,6 +1,8 @@
 "use client";
 
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
@@ -12,7 +14,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 
 export default function Home() {
   const { header, projects } = portfolioData;
-  const { personalInfo } = shopifyPortfolioData;
+  const { personalInfo, about, services } = shopifyPortfolioData;
 
   return (
     <ThemeProvider>
@@ -29,14 +31,10 @@ export default function Home() {
           description={personalInfo.description}
         />
 
+        {/* New About Section */}
+        <About about={about} />
+
         {/* Old sections - will replace incrementally */}
-        {/* <Header
-          name={header.name}
-          title={header.title}
-          description={header.description}
-          resumeUrl={header.resumeUrl}
-          socialLinks={header.socialLinks}
-        /> */}
         <Projects projects={projects} />
         <Footer socialLinks={header.socialLinks} resumeUrl={header.resumeUrl} />
       </main>
