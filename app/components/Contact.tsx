@@ -11,7 +11,7 @@ export default function Contact({ email }: ContactProps) {
       className="py-24 px-4 text-center max-w-[600px] mx-auto"
     >
       <p className="text-[var(--accent-cyan)] font-mono text-base mb-4">
-        What's Next?
+        04. What's Next?
       </p>
       <h2 className="text-[clamp(40px,5vw,60px)] font-semibold text-[var(--heading-dark)] mb-5">
         Get In Touch
@@ -19,7 +19,7 @@ export default function Contact({ email }: ContactProps) {
       <p className="text-[var(--text-primary)] leading-relaxed text-lg mb-10">
         I'm currently available for freelance projects and open to discussing
         new opportunities. Whether you have a question, want to start a project,
-        or just want to say hi, my inbox is always open!
+        or just want to say hi, drop me a message!
       </p>
       <a
         href={`mailto:${email}`}

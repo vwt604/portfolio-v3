@@ -55,19 +55,19 @@ const shopifyPortfolioData: ShopifyPortfolioData = {
       "I'm a web developer specializing in Theme Development, UI Extensions, Functions, and custom solutions that help brands scale.",
     socialLinks: [
       {
-        platform: "GitHub",
-        url: "#",
-        icon: "github",
-      },
-      {
         platform: "LinkedIn",
-        url: "#",
+        url: "https://www.linkedin.com/in/yeungvanessa/",
         icon: "linkedin",
       },
       {
-        platform: "Twitter",
-        url: "#",
-        icon: "twitter",
+        platform: "GitHub",
+        url: "https://github.com/vwt604",
+        icon: "github",
+      },
+      {
+        platform: "Mail",
+        url: "mailto:hello@vanessayeung.dev",
+        icon: "mail",
       },
     ],
   },
@@ -88,16 +88,6 @@ const shopifyPortfolioData: ShopifyPortfolioData = {
   },
   services: [
     {
-      title: "Store Builds & Migration",
-      tab: "Store Builds & Migration",
-      items: [
-        "End to end Shopify store development",
-        "Setting up delivery and shipping rules",
-        "Adding products and collections",
-        "Store migrations from other platforms",
-      ],
-    },
-    {
       title: "Theme Development & Customization",
       tab: "Theme Development & Customization",
       items: [
@@ -115,6 +105,16 @@ const shopifyPortfolioData: ShopifyPortfolioData = {
         "Creating checkout validations",
       ],
       plus: true,
+    },
+    {
+      title: "Store Builds & Migration",
+      tab: "Store Builds & Migration",
+      items: [
+        "End to end Shopify store development",
+        "Setting up delivery and shipping rules",
+        "Adding products and collections",
+        "Store migrations from other platforms",
+      ],
     },
     {
       title: "Automations",

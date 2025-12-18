@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
+import { FiExternalLink } from "react-icons/fi";
 import { FeaturedProject } from "../data/shopifyPortfolioData";
 
 interface FeaturedProjectsProps {
@@ -79,7 +79,7 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                         href={project.link}
                         className="text-[var(--text-emphasis)] hover:text-[var(--accent-cyan)] transition-colors duration-200"
                       >
-                        <ExternalLink size={20} />
+                        <FiExternalLink size={20} />
                       </a>
                     </div>
                   </div>
@@ -114,7 +114,7 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                         href={project.link}
                         className="text-[var(--text-emphasis)] hover:text-[var(--accent-cyan)] transition-colors duration-200"
                       >
-                        <ExternalLink size={20} />
+                        <FiExternalLink size={20} />
                       </a>
                     </div>
                   </div>

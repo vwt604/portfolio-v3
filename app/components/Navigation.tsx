@@ -45,9 +45,6 @@ export default function Navigation({
           ))}
 
           <ThemeToggle />
-          {/* Theme Toggle - using existing component but styled for nav */}
-          {/* <div className="border border-[var(--accent-cyan)] rounded p-1.5 hover:bg-[var(--accent-cyan)]/10 transition-all duration-200">
-          </div> */}
         </div>
       </div>
     </nav>

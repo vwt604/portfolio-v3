@@ -1,16 +1,16 @@
 "use client";
 
-import { Github, Linkedin, Twitter } from "lucide-react";
 import { SocialLink } from "../data/portfolioData";
+import { FiLinkedin, FiGithub, FiMail } from "react-icons/fi";
 
 interface SidebarLeftProps {
   socialLinks: SocialLink[];
 }
 
 const iconMap: Record<string, React.ElementType> = {
-  github: Github,
-  linkedin: Linkedin,
-  twitter: Twitter,
+  github: FiGithub,
+  linkedin: FiLinkedin,
+  mail: FiMail,
 };
 
 export default function SidebarLeft({ socialLinks }: SidebarLeftProps) {
