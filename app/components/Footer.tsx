@@ -2,11 +2,8 @@
 
 export default function Footer() {
   return (
-    <footer className="py-5 pb-10 text-center">
-      <p className="font-mono text-xs text-[var(--text-muted)]">
-        Built with React & Solarized Colors
-      </p>
-      <p className="font-mono text-[11px] text-[var(--text-muted)] mt-2">
+    <footer className="py-5 pb-10 text-center font-mono text-[11px] text-[var(--text-muted)]">
+      <p>
         Design inspired by{" "}
         <a
           href="https://brittanychiang.com"
@@ -16,6 +13,7 @@ export default function Footer() {
         >
           Brittany Chiang
         </a>
+        <p className="mt-2">vanesssayeung.dev © 2025</p>
       </p>
     </footer>
   );

@@ -48,11 +48,11 @@ export interface ShopifyPortfolioData {
 
 const shopifyPortfolioData: ShopifyPortfolioData = {
   personalInfo: {
-    name: "Developer Name",
-    email: "hello@devname.dev",
+    name: "Vanessa Yeung",
+    email: "hello@vanessayeung.dev",
     tagline: "I build Shopify stores.",
     description:
-      "I'm a Shopify developer specializing in building exceptional e-commerce experiences. Currently focused on creating accessible, conversion-optimized storefronts and custom solutions that help brands scale.",
+      "I'm a web developer specializing in Theme Development, UI Extensions, Functions, and custom solutions that help brands scale.",
     socialLinks: [
       {
         platform: "GitHub",
@@ -73,8 +73,8 @@ const shopifyPortfolioData: ShopifyPortfolioData = {
   },
   about: {
     paragraphs: [
-      "Hello! I'm a freelance Shopify developer passionate about creating beautiful, high-performing e-commerce experiences. My journey started 5 years ago when I built my first online store, and I've been hooked on the intersection of design and commerce ever since.",
-      "Fast-forward to today, I've had the privilege of working with startups, established brands, and creative agencies. My main focus is building custom Shopify themes, optimizing store performance, and creating seamless shopping experiences that convert.",
+      "Hello! I'm a Web developer passionate about creating beautiful, high-performing e-commerce experiences. My journey started 4 years ago working at a boutique agency specializing in Headless builds, and I've been hooked on flexible, custom solutions ever since.",
+      "My main focus is building custom Shopify themes, optimizing store performance, and creating seamless shopping experiences that convert.",
       "Here are a few technologies I've been working with recently:",
     ],
     technologies: [
@@ -82,14 +82,14 @@ const shopifyPortfolioData: ShopifyPortfolioData = {
       "JavaScript (ES6+)",
       "React / Next.js",
       "Node.js",
-      "GraphQL",
+      "Tailwind",
       "Shopify Hydrogen",
     ],
   },
   services: [
     {
-      title: "Shopify Store Builds & Migration",
-      tab: "Store Builds",
+      title: "Store Builds & Migration",
+      tab: "Store Builds & Migration",
       items: [
         "End to end Shopify store development",
         "Setting up delivery and shipping rules",
@@ -99,7 +99,7 @@ const shopifyPortfolioData: ShopifyPortfolioData = {
     },
     {
       title: "Theme Development & Customization",
-      tab: "Theme Dev",
+      tab: "Theme Development & Customization",
       items: [
         "Creating custom theme sections",
         "Creating custom pages and forms to personalize how customers discover and purchase your products",
@@ -107,11 +107,11 @@ const shopifyPortfolioData: ShopifyPortfolioData = {
       ],
     },
     {
-      title: "Shopify Functions & Extensions",
-      tab: "Functions",
+      title: "Functions & Extensions",
+      tab: "Functions & Extensions",
       items: [
-        "Customize checkout process",
-        "Customize discounts and shipping rules",
+        "Customizing checkout process",
+        "Customizing discounts and shipping rules",
         "Creating checkout validations",
       ],
       plus: true,
@@ -122,16 +122,15 @@ const shopifyPortfolioData: ShopifyPortfolioData = {
       items: [
         "Creating automated email campaigns",
         "Automating customer segmentation for targeted marketing campaigns",
-        "Order tagging and workflow automation",
+        "Tagging orders and workflow automation",
       ],
     },
     {
       title: "Performance Audit & Optimization",
       tab: "Performance",
       items: [
-        "Run comprehensive site audits",
-        "Provide recommendations to optimize the speed and performance of your site",
-        "Core Web Vitals optimization",
+        "Running comprehensive site audits",
+        "Providing recommendations to optimize the speed and performance of your site",
       ],
     },
   ],
