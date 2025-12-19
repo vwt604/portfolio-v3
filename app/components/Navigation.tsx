@@ -2,13 +2,7 @@
 
 import ThemeToggle from "./ThemeToggle";
 
-interface NavigationProps {
-  activeSection?: string;
-}
-
-export default function Navigation({
-  activeSection = "hero",
-}: NavigationProps) {
+export default function Navigation({}) {
   const navItems = [
     { id: "about", num: 1, label: "About" },
     { id: "services", num: 2, label: "Services" },

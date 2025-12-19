@@ -9,11 +9,11 @@ import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import SidebarLeft from "./components/SidebarLeft";
 import SidebarRight from "./components/SidebarRight";
-import shopifyPortfolioData from "./data/shopifyPortfolioData";
+import portfolioData from "./data/portfolioData";
 import { ThemeProvider } from "./context/ThemeContext";
 
 export default function Home() {
-  const { personalInfo, about, services, featuredProjects } = shopifyPortfolioData;
+  const { personalInfo, about, services, featuredProjects } = portfolioData;
 
   return (
     <ThemeProvider>

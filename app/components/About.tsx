@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { AboutContent } from "../data/shopifyPortfolioData";
+import { AboutContent } from "../data/portfolioData";
 
 interface AboutProps {
   about: AboutContent;
@@ -14,9 +14,15 @@ const SectionNumber = ({ num }: { num: number }) => (
   </span>
 );
 
-export default function About({ about, profileImage = "/assets/glasswalls.jpg" }: AboutProps) {
+export default function About({
+  about,
+  profileImage = "/assets/glasswalls.jpg",
+}: AboutProps) {
   return (
-    <section id="about" className="py-16 md:py-24 px-6 sm:px-12 md:px-24 lg:px-36 max-w-[1200px] mx-auto">
+    <section
+      id="about"
+      className="py-16 md:py-24 px-6 sm:px-12 md:px-24 lg:px-36 max-w-[1200px] mx-auto"
+    >
       <h2 className="flex items-center text-2xl md:text-[28px] font-semibold text-[var(--heading-dark)] mb-8 md:mb-10">
         <SectionNumber num={1} /> About Me
         <span className="flex-1 h-px bg-[var(--bg-secondary)] ml-5 max-w-[300px]" />
@@ -28,16 +34,24 @@ export default function About({ about, profileImage = "/assets/glasswalls.jpg" }
               key={index}
               className="leading-relaxed mb-4 text-sm md:text-base text-[var(--text-primary)]"
             >
-              {paragraph.split(/(startups|established brands|creative agencies)/).map((part, i) => {
-                if (["startups", "established brands", "creative agencies"].includes(part)) {
-                  return (
-                    <span key={i} className="text-[var(--accent-cyan)]">
-                      {part}
-                    </span>
-                  );
-                }
-                return part;
-              })}
+              {paragraph
+                .split(/(startups|established brands|creative agencies)/)
+                .map((part, i) => {
+                  if (
+                    [
+                      "startups",
+                      "established brands",
+                      "creative agencies",
+                    ].includes(part)
+                  ) {
+                    return (
+                      <span key={i} className="text-[var(--accent-cyan)]">
+                        {part}
+                      </span>
+                    );
+                  }
+                  return part;
+                })}
             </p>
           ))}
           <p className="leading-relaxed mb-6 text-sm md:text-base text-[var(--text-primary)]">

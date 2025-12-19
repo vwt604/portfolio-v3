@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Service } from "../data/shopifyPortfolioData";
+import { Service } from "../data/portfolioData";
 
 interface ServicesProps {
   services: Service[];
@@ -17,7 +17,10 @@ export default function Services({ services }: ServicesProps) {
   const [activeService, setActiveService] = useState(0);
 
   return (
-    <section id="services" className="py-16 md:py-24 px-6 sm:px-12 md:px-24 lg:px-36 max-w-[1200px] mx-auto">
+    <section
+      id="services"
+      className="py-16 md:py-24 px-6 sm:px-12 md:px-24 lg:px-36 max-w-[1200px] mx-auto"
+    >
       <h2 className="flex items-center text-2xl md:text-[28px] font-semibold text-[var(--heading-dark)] mb-8 md:mb-10">
         <SectionNumber num={2} /> Services
         <span className="flex-1 h-px bg-[var(--bg-secondary)] ml-5 max-w-[300px]" />

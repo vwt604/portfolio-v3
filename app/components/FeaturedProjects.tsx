@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FiExternalLink } from "react-icons/fi";
-import { FeaturedProject } from "../data/shopifyPortfolioData";
+import { FeaturedProject } from "../data/portfolioData";
 
 interface FeaturedProjectsProps {
   projects: FeaturedProject[];
@@ -100,7 +100,7 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                       </p>
                     </div>
                     <div className="flex gap-3 mb-4 flex-wrap">
-                      {project.tech.map((tech) => (
+                      {project.tech?.map((tech) => (
                         <span
                           key={tech}
                           className="font-mono text-xs text-[var(--text-dim)]"
