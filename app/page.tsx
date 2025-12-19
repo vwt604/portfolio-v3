@@ -7,6 +7,7 @@ import FeaturedProjects from "./components/FeaturedProjects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
+import MobileNavigation from "./components/MobileNavigation";
 import SidebarLeft from "./components/SidebarLeft";
 import SidebarRight from "./components/SidebarRight";
 import portfolioData from "./data/portfolioData";
@@ -19,6 +20,7 @@ export default function Home() {
     <ThemeProvider>
       {/* New Fixed Elements */}
       <Navigation />
+      <MobileNavigation socialLinks={personalInfo.socialLinks} />
       <SidebarLeft socialLinks={personalInfo.socialLinks} />
       <SidebarRight email={personalInfo.email} />
 

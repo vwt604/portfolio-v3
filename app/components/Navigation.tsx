@@ -15,7 +15,7 @@ export default function Navigation({}) {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-[var(--bg-primary)]/95 backdrop-blur-sm z-[100] px-12 py-5">
+    <nav className="fixed top-0 left-0 right-0 bg-[var(--bg-primary)]/95 backdrop-blur-sm z-[100] px-6 sm:px-12 py-5">
       <div className="max-w-[1200px] mx-auto flex justify-between items-center">
         {/* Logo */}
         <button
