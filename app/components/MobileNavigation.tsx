@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import ThemeToggle from "./ThemeToggle";
 import { SocialLink } from "../data/portfolioData";
+import { navItems } from "./Navigation";
 
 interface MobileNavigationProps {
   socialLinks: SocialLink[];
@@ -19,13 +20,6 @@ export default function MobileNavigation({
   socialLinks,
 }: MobileNavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
-
-  const navItems = [
-    { id: "about", num: 1, label: "About" },
-    { id: "services", num: 2, label: "Services" },
-    { id: "projects", num: 3, label: "Projects" },
-    { id: "contact", num: 4, label: "Contact" },
-  ];
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });

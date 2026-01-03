@@ -2,14 +2,14 @@
 
 import ThemeToggle from "./ThemeToggle";
 
-export default function Navigation({}) {
-  const navItems = [
-    { id: "about", num: 1, label: "About" },
-    { id: "services", num: 2, label: "Services" },
-    { id: "projects", num: 3, label: "Projects" },
-    { id: "contact", num: 4, label: "Contact" },
-  ];
+export const navItems = [
+  { id: "about", num: 1, label: "About" },
+  { id: "services", num: 2, label: "Services" },
+  { id: "projects", num: 3, label: "Projects" },
+  { id: "contact", num: 4, label: "Contact" },
+];
 
+export default function Navigation({}) {
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
