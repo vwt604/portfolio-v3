@@ -16,7 +16,7 @@ const SectionNumber = ({ num }: { num: number }) => (
 
 export default function About({
   about,
-  profileImage = "/assets/glasswalls.jpg",
+  profileImage = "/assets/me.jpeg",
 }: AboutProps) {
   return (
     <section
