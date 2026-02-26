@@ -44,6 +44,9 @@ export interface PortfolioData {
   services: Service[];
   featuredProjects: FeaturedProject[];
   otherProjects: OtherProject[];
+  contact: {
+    message: string;
+  };
 }
 
 const portfolioData: PortfolioData = {
@@ -73,8 +76,8 @@ const portfolioData: PortfolioData = {
   },
   about: {
     paragraphs: [
-      "Hello! I'm a web developer passionate about creating tailored e-commerce experiences. My journey started 4 years ago working at an agency specializing in Headless builds, and I've been hooked on flexible, custom solutions ever since.",
-      "My focus is building customizations, optimizing store performance, and creating seamless shopping experiences that convert.",
+      "Hello! I'm a web developer specializing in building custom, scalable Shopify storefronts. My journey started out at a headless-focused agency 4 years ago, and I've been hooked on flexible, custom solutions ever since.",
+      "Now I help brands move beyond basic themes - implementing custom features, improving speed, and optimizing customer journeys that convert.",
       "Here are a few technologies I've been working with recently:",
     ],
     technologies: [
@@ -179,6 +182,10 @@ const portfolioData: PortfolioData = {
       github: "#",
     },
   ],
+  contact: {
+    message:
+      "I'm currently available for freelance projects and open to discussing new opportunities. If you have a question, want to start a project, or just want to connect, feel free to reach out!",
+  },
 };
 
 export default portfolioData;

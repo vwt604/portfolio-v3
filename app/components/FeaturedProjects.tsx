@@ -49,7 +49,7 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                       fill
                       className="object-cover hover:grayscale-0 transition-all duration-300"
                     />
-                    <div className="absolute inset-0 bg-[var(--bg-secondary)]/80 hover:bg-transparent transition-all duration-300" />
+                    <div className="absolute inset-0 bg-[var(--bg-secondary)]/50 hover:bg-transparent transition-all duration-300" />
                   </a>
                   {/* Content Right */}
                   <div className="text-right md:pl-10">
@@ -121,7 +121,7 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                   {/* Image Right */}
                   <a
                     href={project.link}
-                    className="relative aspect-[16/10] rounded overflow-hidden group md:order-2 block"
+                    className="relative aspect-[16/10] rounded overflow-hidden group order-first md:order-2 block"
                   >
                     <Image
                       src={project.img}
@@ -129,7 +129,7 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                       fill
                       className="object-cover hover:grayscale-0 transition-all duration-300"
                     />
-                    <div className="absolute inset-0 bg-[var(--accent-cyan)]/30 hover:bg-transparent transition-all duration-300" />
+                    <div className="absolute inset-0 bg-[var(--bg-secondary)]/50 hover:bg-transparent transition-all duration-300" />
                   </a>
                 </>
               )}

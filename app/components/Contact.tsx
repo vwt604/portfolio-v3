@@ -1,4 +1,5 @@
 "use client";
+import portfolioData from "../data/portfolioData";
 
 interface ContactProps {
   email: string;
@@ -17,9 +18,7 @@ export default function Contact({ email }: ContactProps) {
         Get In Touch
       </h2>
       <p className="text-[var(--text-primary)] leading-relaxed text-lg mb-10">
-        I'm currently available for freelance projects and open to discussing
-        new opportunities. Whether you have a question, want to start a project,
-        or just want to say hi, drop me a message!
+        {portfolioData.contact.message}
       </p>
       <a
         href={`mailto:${email}`}
