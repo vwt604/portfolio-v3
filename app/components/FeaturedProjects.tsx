@@ -60,7 +60,7 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                       {project.title}
                     </h3>
                     <div className="bg-[var(--bg-secondary)] p-6 rounded mb-5 md:-ml-20 relative z-[2]">
-                      <p className="text-[var(--text-primary)] leading-relaxed text-[15px]">
+                      <p className="text-[var(--text-primary)] leading-relaxed text-[15px] text-start">
                         {project.desc}
                       </p>
                     </div>
