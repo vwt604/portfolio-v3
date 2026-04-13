@@ -1,7 +1,7 @@
 "use client";
 
 import { SocialLink } from "../data/portfolioData";
-import { FiLinkedin, FiGithub, FiMail } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiMail, FiFileText } from "react-icons/fi";
 
 interface SidebarLeftProps {
   socialLinks: SocialLink[];
@@ -11,6 +11,7 @@ const iconMap: Record<string, React.ElementType> = {
   github: FiGithub,
   linkedin: FiLinkedin,
   mail: FiMail,
+  "file-text": FiFileText,
 };
 
 export default function SidebarLeft({ socialLinks }: SidebarLeftProps) {

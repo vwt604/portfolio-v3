@@ -27,8 +27,13 @@ export interface OtherProject {
   github: string;
 }
 
+export interface Paragraph {
+  text: string;
+  links?: Record<string, string>;
+}
+
 export interface AboutContent {
-  paragraphs: string[];
+  paragraphs: Paragraph[];
   technologies: string[];
 }
 
@@ -48,6 +53,9 @@ export interface PortfolioData {
     message: string;
   };
 }
+
+export const resumeUrl =
+  "https://www.canva.com/design/DAHGIknk_h4/AUn2Jri-k2sLCnTBA65gFg/view?utlId=he3ec6b33a2";
 
 const portfolioData: PortfolioData = {
   personalInfo: {
@@ -72,22 +80,38 @@ const portfolioData: PortfolioData = {
         url: "mailto:hello@vanessayeung.dev",
         icon: "mail",
       },
+      {
+        platform: "Resume",
+        url: resumeUrl,
+        icon: "file-text",
+      },
     ],
   },
   about: {
     paragraphs: [
-      "Hello! I'm a frontend developer specializing in ecommerce - particularly Shopify. My journey started at an ecommerce agency 4 years ago where I worked with brands like 7mesh and Organika, and I've been hooked on flexible, custom solutions ever since.",
-      "Now I help brands go further than their theme allows - building custom storefronts, flexible architecture, and ecommerce experiences that are built to last.",
-      "Here are a few technologies I've been working with:",
+      {
+        text: "Hello! I'm a frontend developer specializing in ecommerce - particularly Shopify. My journey started at an ecommerce agency 4 years ago where I worked on Headless builds, and I've been hooked on flexible, custom solutions ever since.",
+        links: {
+          journey: resumeUrl,
+          agency: "https://thejibe.com/",
+        },
+      },
+      {
+        text: "Now I help brands go further than their theme allows - building custom storefronts, flexible architecture, and ecommerce experiences that are built to last.",
+      },
+      {
+        text: "Here are a few technologies I've worked with:",
+      },
     ],
     technologies: [
       "Shopify / Liquid",
-      "JavaScript (ES6+) / Typescript",
+      "JavaScript (ES6+) / TypeScript",
       "React / Next.js",
       "HTML / CSS",
       "Node.js",
       "Tailwind",
       "Klaviyo",
+      "Vercel",
     ],
   },
   services: [
