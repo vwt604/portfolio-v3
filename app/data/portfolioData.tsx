@@ -53,9 +53,9 @@ const portfolioData: PortfolioData = {
   personalInfo: {
     name: "Vanessa Yeung",
     email: "hello@vanessayeung.dev",
-    tagline: "I build Shopify stores.",
+    tagline: "I build ecommerce experiences.",
     description:
-      "I'm a web developer specializing in Shopify Theme Development, UI Extensions, Functions, and custom solutions that help brands scale.",
+      "I'm a frontend developer specializing in Shopify - from headless storefronts to deep theme customizations, building ecommerce experiences that help brands scale.",
     socialLinks: [
       {
         platform: "LinkedIn",
@@ -76,13 +76,13 @@ const portfolioData: PortfolioData = {
   },
   about: {
     paragraphs: [
-      "Hello! I'm a web developer specializing in building custom, scalable Shopify storefronts. My journey started out at a headless-focused agency 4 years ago, and I've been hooked on flexible, custom solutions ever since.",
-      "Now I help brands move beyond basic themes - implementing custom features, improving speed, and optimizing customer journeys that convert.",
-      "Here are a few technologies I've been working with recently:",
+      "Hello! I'm a frontend developer specializing in ecommerce - particularly Shopify. My journey started at an ecommerce agency 4 years ago where I worked with brands like 7mesh and Organika, and I've been hooked on flexible, custom solutions ever since.",
+      "Now I help brands go further than their theme allows - building custom storefronts, flexible architecture, and ecommerce experiences that are built to last.",
+      "Here are a few technologies I've been working with:",
     ],
     technologies: [
       "Shopify / Liquid",
-      "JavaScript (ES6+)",
+      "JavaScript (ES6+) / Typescript",
       "React / Next.js",
       "HTML / CSS",
       "Node.js",
@@ -92,39 +92,47 @@ const portfolioData: PortfolioData = {
   },
   services: [
     {
-      title: "Theme Development & Customization",
-      tab: "Theme Development & Customization",
+      title: "Custom Theme Development",
+      tab: "Custom Theme Development",
       items: [
-        "Creating custom theme sections",
-        "Creating custom pages and forms to personalize how customers discover and purchase your products",
-        "Reorganizing navigation and creating custom mega menus",
+        "Building headless Shopify storefronts with custom frontends",
+        "Creating custom theme sections, pages, and mega menus",
+        "Architecting scalable, component-based theme systems",
       ],
     },
     {
-      title: "Shopify Flow Automations",
-      tab: "Shopify Flow",
+      title: "Shopify Plus Features",
+      tab: "Shopify Plus Features",
       items: [
-        "Creating automated email campaigns",
-        "Implementing upselling stratgies after check out",
-        "Tagging orders and workflow automation",
-      ],
-    },
-    {
-      title: "Functions & Extensions",
-      tab: "Functions & Extensions",
-      items: [
-        "Customizing checkout process",
-        "Customizing discounts and shipping rules",
-        "Creating checkout validations",
+        "Customizing checkout process and checkout UI extensions",
+        "Customizing discount rules, shipping logic, and checkout validations",
       ],
       plus: true,
     },
     {
-      title: "Performance Audit & Optimization",
-      tab: "Performance",
+      title: "Performance Optimization",
+      tab: "Performance Optimization",
       items: [
         "Running comprehensive site audits",
         "Providing recommendations to optimize the speed and performance of your site",
+      ],
+    },
+    {
+      title: "Shopify Flow & Automations",
+      tab: "Shopify Flow",
+      items: [
+        "Creating automated email campaigns",
+        "Implementing upselling strategies after checkout",
+        "Workflow automations",
+      ],
+    },
+    {
+      title: "Store Setup & Migration",
+      tab: "Store Setup & Migration",
+      items: [
+        "Migrating themes and platforms",
+        "Setting up new Shopify stores with custom configurations",
+        "Configuring shipping, payment, discounts, and apps",
       ],
     },
   ],

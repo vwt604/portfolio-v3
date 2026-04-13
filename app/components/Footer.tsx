@@ -11,10 +11,9 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           vanesssayeung.dev &copy; {new Date().getFullYear()}
-        </a>{" "}
+        </a>
       </p>
       <p className="mt-2 text-[10px]">
-        {" "}
         Design inspired by{" "}
         <a
           href="https://brittanychiang.com"

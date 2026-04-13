@@ -23,8 +23,8 @@ export default function Hero({ name, tagline, description }: HeroProps) {
         {name}.
       </h1>
       <h2 className="text-[clamp(40px,8vw,80px)] font-bold leading-[1.1] mt-2.5 mb-0 text-[var(--text-muted)] ">
-        I build <span className="text-[var(--accent-cyan)]">Shopify</span>{" "}
-        stores.
+        I build <span className="text-[var(--accent-cyan)]">ecommerce</span>{" "}
+        experiences.
       </h2>
       <p className="max-w-[540px] mt-6 text-base md:text-lg leading-relaxed text-[var(--text-dim)]">
         {description}
