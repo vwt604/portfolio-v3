@@ -13,7 +13,7 @@ export default function Footer() {
           vanesssayeung.dev &copy; {new Date().getFullYear()}
         </a>
       </p>
-      <p className="mt-2 text-[10px]">
+      <p className="mt-2 text-[9px] opacity-50">
         Design inspired by{" "}
         <a
           href="https://brittanychiang.com"

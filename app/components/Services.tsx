@@ -44,7 +44,7 @@ export default function Services({ services }: ServicesProps) {
         </div>
 
         {/* Content */}
-        <div className="py-2.5 px-0 md:pl-8 min-h-[240px] md:min-h-[280px]">
+        <div className="py-2.5 px-0 md:pl-8 min-h-[180px] md:min-h-[200px]">
           <h3 className="text-lg md:text-xl text-[var(--heading-dark)] mb-2 flex items-center gap-2.5">
             {services[activeService].title}
             {services[activeService].plus && (

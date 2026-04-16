@@ -148,15 +148,15 @@ const portfolioData: PortfolioData = {
         "Workflow automations",
       ],
     },
-    {
-      title: "Store Setup & Migration",
-      tab: "Store Setup & Migration",
-      items: [
-        "Migrating themes and platforms",
-        "Setting up new Shopify stores with custom configurations",
-        "Configuring shipping, payment, discounts, and apps",
-      ],
-    },
+    // {
+    //   title: "Store Setup & Migration",
+    //   tab: "Store Setup & Migration",
+    //   items: [
+    //     "Migrating themes and platforms",
+    //     "Setting up new Shopify stores with custom configurations",
+    //     "Configuring shipping, payment, discounts, and apps",
+    //   ],
+    // },
   ],
   featuredProjects: [
     {
