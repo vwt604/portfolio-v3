@@ -26,11 +26,7 @@ export default function Home() {
 
       <main className="min-h-screen">
         {/* New Hero Section */}
-        <Hero
-          name={personalInfo.name}
-          tagline={personalInfo.tagline}
-          description={personalInfo.description}
-        />
+        <Hero name={personalInfo.name} description={personalInfo.description} />
 
         {/* New About Section */}
         <About about={about} />

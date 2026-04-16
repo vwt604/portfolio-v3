@@ -2,11 +2,10 @@
 
 interface HeroProps {
   name: string;
-  tagline: string;
   description: string;
 }
 
-export default function Hero({ name, tagline, description }: HeroProps) {
+export default function Hero({ name, description }: HeroProps) {
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };

@@ -41,7 +41,6 @@ export interface PortfolioData {
   personalInfo: {
     name: string;
     email: string;
-    tagline: string;
     description: string;
     socialLinks: SocialLink[];
   };
@@ -61,9 +60,8 @@ const portfolioData: PortfolioData = {
   personalInfo: {
     name: "Vanessa Yeung",
     email: "hello@vanessayeung.dev",
-    tagline: "I build ecommerce experiences.",
     description:
-      "I'm a frontend developer specializing in Shopify - from headless storefronts to deep theme customizations, building ecommerce experiences that help brands scale.",
+      "Frontend developer building custom ecommerce solutions - from headless storefronts to deep theme customizations that help brands grow.",
     socialLinks: [
       {
         platform: "LinkedIn",
@@ -128,8 +126,8 @@ const portfolioData: PortfolioData = {
       title: "Shopify Plus Features",
       tab: "Shopify Plus Features",
       items: [
-        "Customizing checkout process and checkout UI extensions",
-        "Customizing discount rules, shipping logic, and checkout validations",
+        "Building custom checkout experiences with Shopify UI Extensions",
+        "Implementing custom discount functions, shipping rules, and cart validations with Shopify Functions",
       ],
       plus: true,
     },
@@ -193,24 +191,6 @@ const portfolioData: PortfolioData = {
       title: "Custom Checkout Extension",
       desc: "Shopify checkout extension for custom gift messaging and delivery date selection.",
       tech: ["Checkout UI", "React", "Liquid"],
-      github: "#",
-    },
-    {
-      title: "Product Customizer",
-      desc: "Interactive product customizer allowing customers to personalize items in real-time.",
-      tech: ["JavaScript", "Canvas API", "Liquid"],
-      github: "#",
-    },
-    {
-      title: "Wholesale Portal",
-      desc: "B2B wholesale ordering portal with tiered pricing and bulk order management.",
-      tech: ["Shopify Plus", "B2B", "Custom App"],
-      github: "#",
-    },
-    {
-      title: "Analytics Dashboard",
-      desc: "Custom analytics dashboard aggregating Shopify data with marketing metrics.",
-      tech: ["React", "D3.js", "Shopify API"],
       github: "#",
     },
   ],
