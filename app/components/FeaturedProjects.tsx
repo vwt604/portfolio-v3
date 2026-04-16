@@ -47,9 +47,9 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                       src={project.img}
                       alt={project.title}
                       fill
-                      className="object-cover hover:grayscale-0 transition-all duration-300"
+                      className="object-cover transition-all duration-300"
                     />
-                    <div className="absolute inset-0 bg-[var(--bg-secondary)]/50 hover:bg-transparent transition-all duration-300" />
+                    <div className="absolute inset-0 bg-[var(--accent-cyan)]/30 hover:bg-transparent transition-all duration-300" />
                   </a>
                   {/* Content Right */}
                   <div className="text-right md:pl-10">
@@ -127,9 +127,9 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                       src={project.img}
                       alt={project.title}
                       fill
-                      className="object-cover hover:grayscale-0 transition-all duration-300"
+                      className="object-cover transition-all duration-300"
                     />
-                    <div className="absolute inset-0 bg-[var(--bg-secondary)]/50 hover:bg-transparent transition-all duration-300" />
+                    <div className="absolute inset-0 bg-[var(--accent-cyan)]/30 hover:bg-transparent transition-all duration-300" />
                   </a>
                 </>
               )}

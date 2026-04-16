@@ -12,7 +12,7 @@ export default function Contact({ email }: ContactProps) {
       className="py-24 px-4 text-center max-w-[600px] mx-auto"
     >
       <p className="text-[var(--accent-cyan)] font-mono text-base mb-4">
-        04. What's Next?
+        {`04. What's Next?`}
       </p>
       <h2 className="text-[clamp(40px,5vw,60px)] font-semibold text-[var(--heading-dark)] mb-5">
         Get In Touch
