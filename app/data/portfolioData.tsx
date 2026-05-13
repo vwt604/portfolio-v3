@@ -61,7 +61,7 @@ const portfolioData: PortfolioData = {
     name: "Vanessa Yeung",
     email: "hello@vanessayeung.dev",
     description:
-      "Frontend developer building custom ecommerce solutions - from headless storefronts to deep theme customizations that help brands grow.",
+      "Frontend developer with 4+ years experience building scalable ecommerce solutions. I care about user experience, clean architecture, and code that holds up.",
     socialLinks: [
       {
         platform: "LinkedIn",
@@ -88,27 +88,32 @@ const portfolioData: PortfolioData = {
   about: {
     paragraphs: [
       {
-        text: "Hello! I'm a frontend developer specializing in ecommerce - particularly Shopify. My journey started at an ecommerce agency 4 years ago where I worked on Headless builds, and I've been hooked on flexible, custom solutions ever since.",
+        text: "I'm a frontend developer with 4+ years of experience at a Vancouver-based ecommerce agency. I started working on headless Shopify builds early in my career and grew a passion for scalable, custom frontend solutions.",
         links: {
-          journey: resumeUrl,
-          agency: "https://thejibe.com/",
+          "ecommerce agency": "https://thejibe.com/",
         },
       },
-      // {
-      //   text: "Now I help brands go further than their theme allows - building custom storefronts, flexible architecture, and ecommerce experiences that are built to last.",
-      // },
+      {
+        text: "What drives me is building things that solve real business problems. I'm currently looking for frontend engineering roles at ecommerce-focused companies where I can work with modern stacks and keep pushing past what off-the-shelf solutions allow.",
+      },
       {
         text: "Here are a few technologies I've worked with:",
       },
     ],
     technologies: [
-      "Shopify / Liquid",
       "JavaScript (ES6+) / TypeScript",
       "React / Next.js",
       "HTML / CSS",
+      "Shopify / Liquid",
+      "GraphQL",
       "Node.js",
       "Tailwind",
+      "Prismic",
+      "Contentful",
+      "Storybook",
       "Klaviyo",
+      "Yotpo",
+      "Git / GitHub Actions",
       "Vercel",
     ],
   },
