@@ -114,49 +114,45 @@ const portfolioData: PortfolioData = {
   },
   services: [
     {
-      title: "Custom Theme Development",
-      tab: "Custom Theme Development",
+      title: "Headless & Frontend",
+      tab: "Headless & Frontend",
       items: [
-        "Building headless Shopify storefronts with custom frontends",
-        "Creating custom theme sections, pages, and mega menus",
-        "Architecting scalable, component-based theme systems",
+        "Building custom storefronts with React and Next.js, and Liquid-based Shopify themes",
+        "CMS integrations with Prismic and Contentful",
+        "Building and maintaining in-house UI component libraries and design systems",
+        "Architecting scalable, reusable component-based frontend systems",
       ],
     },
     {
-      title: "Shopify Plus Features",
-      tab: "Shopify Plus Features",
+      title: "Shopify Plus",
+      tab: "Shopify Plus",
       items: [
-        "Building custom checkout experiences with Shopify UI Extensions",
-        "Implementing custom discount functions, shipping rules, and cart validations with Shopify Functions",
+        "Custom checkout experiences with Shopify UI Extensions",
+        "Custom discount functions, shipping rules, and cart validations with Shopify Functions",
+        "Internationalization with Shopify Markets — multi-currency, multi-language, and regional pricing",
       ],
       plus: true,
     },
     {
-      title: "Performance Optimization",
-      tab: "Performance Optimization",
+      title: "Integrations & Apps",
+      tab: "Integrations & Apps",
       items: [
-        "Running comprehensive site audits",
-        "Providing recommendations to optimize the speed and performance of your site",
+        "Klaviyo email flows, segmentation, and Shopify integration",
+        "Shopify REST and GraphQL Admin and Storefront API",
+        "Shopify Flow automations and workflow triggers",
+        "Custom content modelling with metaobjects and metafields",
       ],
     },
     {
-      title: "Shopify Flow & Automations",
-      tab: "Shopify Flow",
+      title: "Tooling & Workflow",
+      tab: "Tooling & Workflow",
       items: [
-        "Creating automated email campaigns",
-        "Implementing upselling strategies after checkout",
-        "Workflow automations",
+        "TypeScript across frontend and backend codebases",
+        "Git version control, branching strategies, and code review on GitHub",
+        "CI/CD pipelines and deployment with Vercel and GitHub Actions",
+        "Design collaboration in Figma, component documentation with Storybook, and Agile/Scrum workflows",
       ],
     },
-    // {
-    //   title: "Store Setup & Migration",
-    //   tab: "Store Setup & Migration",
-    //   items: [
-    //     "Migrating themes and platforms",
-    //     "Setting up new Shopify stores with custom configurations",
-    //     "Configuring shipping, payment, discounts, and apps",
-    //   ],
-    // },
   ],
   featuredProjects: [
     {
