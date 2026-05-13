@@ -94,9 +94,9 @@ const portfolioData: PortfolioData = {
           agency: "https://thejibe.com/",
         },
       },
-      {
-        text: "Now I help brands go further than their theme allows - building custom storefronts, flexible architecture, and ecommerce experiences that are built to last.",
-      },
+      // {
+      //   text: "Now I help brands go further than their theme allows - building custom storefronts, flexible architecture, and ecommerce experiences that are built to last.",
+      // },
       {
         text: "Here are a few technologies I've worked with:",
       },
@@ -196,7 +196,7 @@ const portfolioData: PortfolioData = {
   ],
   contact: {
     message:
-      "I'm currently available for freelance projects and open to discussing new opportunities. If you have a question, want to start a project, or just want to connect, feel free to reach out!",
+      "I'm currently available to discussing new projects and opportunities. If you have a question, want to start a project, or just want to connect, feel free to reach out!",
   },
 };
 
