@@ -22,7 +22,7 @@ export default function Services({ services }: ServicesProps) {
       className="py-16 md:py-24 px-6 sm:px-12 md:px-24 lg:px-36 max-w-[1200px] mx-auto"
     >
       <h2 className="flex items-center text-2xl md:text-[28px] font-semibold text-[var(--heading-dark)] mb-8 md:mb-10">
-        <SectionNumber num={2} /> Services
+        <SectionNumber num={2} /> Skills
         <span className="flex-1 h-px bg-[var(--bg-secondary)] ml-5 max-w-[300px]" />
       </h2>
       <div className="flex flex-col md:flex-row gap-4 md:gap-0">

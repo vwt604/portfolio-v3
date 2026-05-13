@@ -80,7 +80,7 @@ export default function About({
                 src={profileImage}
                 alt="Profile"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                className="object-cover  transition-all duration-300"
               />
               <div className="absolute inset-0 bg-[var(--accent-cyan)]/30 hover:bg-transparent transition-all duration-300" />
             </div>
