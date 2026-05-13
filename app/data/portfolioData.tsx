@@ -156,15 +156,15 @@ const portfolioData: PortfolioData = {
   ],
   featuredProjects: [
     {
-      title: "7mesh",
-      desc: "Worked as part of a team to build a custom Shopify Plus store with headless architecture. My contributions included building custom components with CMS integration, implementing complex sale features, and developing custom checkout extensions.",
+      title: "Shopify Plus Storefront",
+      desc: "Headless Shopify Plus storefront for a global outdoor apparel brand, serving customers across multiple countries and currencies. Contributed CMS-integrated components built with Prismic, complex promotional sale logic, and custom checkout extensions.",
       tech: ["Shopify Plus,", "Shopify Extensions,", "Headless"],
-      link: "https://7mesh.com/",
+      link: "#",
       img: "/assets/scheduler.jpg",
     },
     {
       title: "Bikeshack",
-      desc: "A theme built leveraging Dawn 2.0 with added featured to support a dynamic product comparison page, product quiz for product recommendation, and custom product pages with availability display.",
+      desc: "A Shopify demo store built on Dawn 2.0 to showcase theme development depth. Features a dynamic product comparison page, a conditional product recommendation quiz, and custom product pages with real-time availability display.",
       tech: ["Section Rendering API,", "Custom Form,", "Custom Sections"],
       link: "https://bikeshack-dev.myshopify.com/",
       img: "/assets/bikeshack.png",
@@ -172,22 +172,16 @@ const portfolioData: PortfolioData = {
   ],
   otherProjects: [
     {
-      title: "Subscription Box App",
-      desc: "Custom Shopify app for managing subscription boxes with flexible delivery schedules.",
-      tech: ["Node.js", "React", "Polaris"],
-      github: "#",
+      title: "Tweeter",
+      desc: "A Twitter clone rebuilt in Vue.js, refactored from a legacy jQuery codebase — an exercise in translating imperative DOM manipulation into a component-driven architecture.",
+      tech: ["Vue.js", "JavaScript", "CSS"],
+      github: "https://github.com/vwt604/tweeter",
     },
     {
-      title: "Inventory Sync Tool",
-      desc: "Real-time inventory synchronization between Shopify and external warehouse systems.",
-      tech: ["GraphQL", "Webhooks", "AWS"],
-      github: "#",
-    },
-    {
-      title: "Custom Checkout Extension",
-      desc: "Shopify checkout extension for custom gift messaging and delivery date selection.",
-      tech: ["Checkout UI", "React", "Liquid"],
-      github: "#",
+      title: "Portfolio v3",
+      desc: "This portfolio, built with Next.js, TypeScript, and Tailwind CSS. Dark terminal aesthetic with a data-driven architecture — all content lives in a single typed data file.",
+      tech: ["Next.js", "TypeScript", "Tailwind"],
+      github: "https://github.com/vwt604/portfolio-v3",
     },
   ],
   contact: {
